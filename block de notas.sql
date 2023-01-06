@@ -1,0 +1,2 @@
+pruebas SQL
+SELECT * FROM LIFE_COVER where NBRANCH=73
