@@ -10,3 +10,8 @@ SELECT * FROM LIFE_COVER where NBRANCH=73
 
 
 ---nueva pruebita
+
+--se egrego el nuevo query
+
+SELECT * FROM LIFE_COVER WHERE NBRANCH = 73 AND NPRODUCT = 1 AND NMODULEC = 22 AND NCOVER = 6;
+
