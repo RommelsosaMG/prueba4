@@ -1,10 +1,9 @@
-pruebas SQL
-SELECT * FROM LIFE_COVER where NBRANCH=73
+--pruebas SQL
+SELECT * FROM LIFE_COVER where NBRANCH=73;
 
-select * from tbl_pd_cotizacion_cab where nid_cotizacion=41854
+select * from tbl_pd_cotizacion_cab where nid_cotizacion=41854;
 
---- nuevo cambio
---mejoras en el codigo
+--nuevo cambios a las 11:01
 
 --se realizan cambios en el uso de git
 
