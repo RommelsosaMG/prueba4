@@ -1,3 +1,4 @@
+--Estas con las consultas SQL para LAFT
 -- QUERYS LAFT--
 --NUEVO PAQUQETES
 --USUARIOS
