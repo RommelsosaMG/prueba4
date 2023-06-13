@@ -21,10 +21,11 @@ SELECT * FROM batch_job WHERE skey ='T2023051004671211756' ;--- EN ESTA TABLA CO
  5 - Termino exitoso.
  */
 
---Tabla de control de transacciones )--
+-----------------------------------------------------------------------------Tabla de control de transacciones )---------------------------------------------------------------------------------------------------------------------------
 select * from tbl_pd_log_transac WHERE skey ='T2022100736927101537';--- EN ESTA TABLA PUEDES VALIDAR SI SE LLEGA A PRESENTAR ALGUN ERROR EN LA TRANSACCION Y NO SE COMPLETO / CON EL SKEY DE LA TRANSACCION Q OBTIENES EN COT_TRANSAC
 
 --Tabla de control de transacciones de polizas pendientes de Pago Adelantado tipo CIP (Pago Efectivo)--
 SELECT * FROM TBL_PD_POLIZA_PREPAY T WHERE T.NID_PROC ='000090509RqKQq7420230516170117'
 
-select * from tbl_pd_pre_mov_cab where NID_COTIZACION=47006 and npolicy=6000013437 -- en esta table se ve los certificados asociados a la polizas (emsion, inclusion,exclusiones)
+select * from tbl_pd_pre_mov_cab where NID_COTIZACION=47006 and npolicy=6000013437 -- en esta table se ve los certificados asociados a la polizas (emsion, inclusion,exclusiones) si se tiene el SKEY se puede mostrar los certificados segun el SKEY
+
