@@ -1,32 +1,4 @@
---pruebas SQL
-SELECT * FROM LIFE_COVER where NBRANCH=73;
-
-select * from tbl_pd_cotizacion_cab where nid_cotizacion=41854;
-
---nuevo cambios a las 11:01
-
---se realizan cambios en el uso de git
-
--- nuevva mejora de la mejora
-
-
----nueva pruebita
-
---se egrego el nuevo query
-
-SELECT * FROM LIFE_COVER WHERE NBRANCH = 73 AND NPRODUCT = 1 AND NMODULEC = 22 AND NCOVER = 6;
-
---prueba final para agregar un query
-
---------------------------- POLICY ----------------------------------------
-SELECT SCERTYPE,NBRANCH,NPOLICY,SCLIENT,NPRODUCT,DCHANGDAT,DCOMPDATE,DDATE_ORIGI,DSTARTDATE,DEXPIRDAT,DISSUEDAT,DNULLDATE,DNEXTRECEIP,NCAPITAL,NPARTICIP,NPREMIUM,NPAYFREQ,NINTERMED,NLAST_CERTI,SCOLINVOT,SCOLTIMRE,SCOMMITYP,SPOLITYPE,SSTATUS_POL
- FROM POLICY SSTATUS_POL
-WHERE NPOLICY= 2000002554;
-
-
-
----- Consulta para  obtener la cotización , categoria , tasa, prima neta , producto , ramo , poliza , monto de planilla , plan , frecuencia de pago  y tipo de renovacion
-
+---En esta consulta se encuentra las categorias , tasas , prima mensual , producto  y ramo. Prima total , planilla , plan , frecuencia de pago y renovacion.
 
 SELECT T1.NID_COTIZACION, (SELECT SDESCRIPT FROM TBL_PD_TYPE_EMPLOYEE WHERE NTYPE_EMPLOYEE = NMODULEC) AS CATEGORIA,
            NTASA_CALCULADA, NPREMIUM_MENSUAL,NPRODUCT,NBRANCH,npolicy,
@@ -46,11 +18,3 @@ WHERE NID_COTIZACION IN
 )
 AND DNULLDATE IS NULL
 ORDER BY NID_COTIZACION, T1.NMODULEC
-
-----AGREGAR UN NUEVO CODIGO
-
-
-
-
-
-
