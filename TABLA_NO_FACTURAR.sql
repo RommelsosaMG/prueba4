@@ -1,0 +1,1 @@
+SELECT * FROM TBL_PD_CLIENTES_PRUEBAS---- tabla para no facturar
